@@ -1,0 +1,5 @@
+{
+  "name": "Travis Deduplicator",
+  "description": "Rails 5 API that stop all builds on the same PR when a new job starts.",
+  "repository": "https://github.com/hadinishad/travis-deduplicator"
+}
