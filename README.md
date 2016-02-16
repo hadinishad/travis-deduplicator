@@ -5,15 +5,11 @@ Inspired by [grosser/travis_dedup](https://github.com/grosser/travis_dedup). Rai
 
 ## Setup
 
-`git clone https://github.com/hadinishad/travis-deduplicator.git`
-
 `travis login --pro`
 
 `travis token --pro`
 
- Copy the generated travis token to application.yml (Don't worry, this is gitignored)
-
- Push your app to heroku and run `$ figaro heroku:set -e production`
+Click on [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/hadinishad/travis-deduplicator) and enter the access token there.
  
  Setup a github webhook `https://YOURAPP.herokuapp.com/repos/deduplicate?repo=ORGANIZATION/REPO` and set it to send push and pull request events.
  
