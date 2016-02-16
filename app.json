@@ -1,7 +1,7 @@
 {
   "name": "Travis Deduplicator",
   "description": "Rails 5 API that stop all builds on the same PR when a new job starts.",
-  "repository": "https://github.com/hadinishad/travis-deduplicator"
+  "repository": "https://github.com/hadinishad/travis-deduplicator",
   "env": {
     "access_token": {
       "description": "Your travis access token. Get this by running travis token --pro ",
