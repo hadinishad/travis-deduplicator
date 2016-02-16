@@ -3,7 +3,7 @@ class ReposController < ApplicationController
     begin
       client = Travis::Client.new('https://api.travis-ci.com')
       client.access_token = ENV["access_token"]
-      repository = client.repo("adwyze/#{params[:repo]}")
+      repository = client.repo("#{params[:repo]}")
       ids = []
       cancelled = []
 
