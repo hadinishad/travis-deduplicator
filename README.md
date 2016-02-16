@@ -15,7 +15,7 @@ Inspired by [grosser/travis_dedup](https://github.com/grosser/travis_dedup). Rai
 
  Push your app to heroku and run `$ figaro heroku:set -e production`
  
- Setup a github webhook `https://peaceful-beyond-54048.herokuapp.com/repos/deduplicate?repo=ORGANIZATION/REPO` and set it     push and pull request events.
+ Setup a github webhook `https://YOURAPP.herokuapp.com/repos/deduplicate?repo=ORGANIZATION/REPO` and set it to send push and pull request events.
  
 ## TODO
 
