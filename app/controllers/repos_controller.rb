@@ -8,7 +8,7 @@ class ReposController < ApplicationController
       cancelled = []
 
       repository.each_build do |build|
-        if build.state == 'started' || build.state == 'queued'
+        if build.state == 'started' || build.state == 'queued' || build.state == 'created'
           if ids.include? build.pull_request_number
             cancelled << build.pull_request_number
             build.cancel if build.cancelable?
