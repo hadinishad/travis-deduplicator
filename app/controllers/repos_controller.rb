@@ -9,7 +9,7 @@ class ReposController < ApplicationController
 
       number_of_builds = params[:builds] || 20
 
-      repository.first(number_of_builds).each do |build|
+      repository.builds.first(number_of_builds).each do |build|
         if build.state == 'started' || build.state == 'queued' || build.state == 'created'
           if ids.include? build.pull_request_number
             cancelled << build.pull_request_number
